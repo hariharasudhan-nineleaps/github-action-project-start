@@ -1,0 +1,13 @@
+name: Issue tracker
+on:
+  issues:
+    types: ["opened"]
+  workflow_dispatch:
+jobs:
+  track:
+    runs_on: "ubuntu-22.04"
+    steps:
+      - name: "Show issue detail"
+        run: |
+          echo ${{ toJSON(github) }}
+
