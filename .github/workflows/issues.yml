@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 jobs:
   track:
-    runs_on: ubuntu-22.04
+    runs-on: ubuntu-22.04
     steps:
       - name: "Show issue detail"
         run: |
